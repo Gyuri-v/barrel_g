@@ -62,11 +62,10 @@ table {
 
 
 
-
-
-
 /*main*/
-.txt_title{ font-size: 36px; font-weight: bold; text-align: center; line-height: 48px;}
+.txt_title{ font-size: 40px; font-weight: bold; text-align: center; line-height: 48px;}
+.more{ padding: 20px 0; text-align: center;}
+.more a{ display: inline-block; font-size: 24px; font-weight: 400; border-bottom: 1px solid #000; }
 
 /*main_vis*/
 .main_vis{ width: 100%; height: auto; }
@@ -90,16 +89,14 @@ table {
 .main_best .slide_nav .swiper-wrapper{ width: 100%;}
 .main_best .slide_nav .swiper-slide{ width: 120px; text-align: center; line-height: 90px; position: relative;}
 .main_best .slide_nav .swiper-slide:last-child{ margin-right: 30px;}
-.main_best .slide_nav .swiper-slide.on::after{ content: ' '; width: 80px; height: 80px; border-radius: 100%; background-color: #17b0e9; opacity: 0.7; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
-.main_best .slide_nav .swiper-slide a{ display: block; color:#000; font-size: 24px; font-weight: bold; margin: auto;}
+.main_best .slide_nav .swiper-slide.on::after{ content: ' '; width: 80px; height: 80px; border-radius: 100%; background-color: #17b0e9; opacity: 0.5; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;}
+.main_best .slide_nav .swiper-slide a{ display: block; color:#000; font-size: 24px; font-weight: 400; margin: auto;}
 
-.main_best .best_con{ }
-.main_best .best_con .swiper-container{ padding: 10px 30px;}
+.main_best .best_con .swiper-container{ display: none;}
+.main_best .best_con .swiper-container.on{ display: block; padding: 10px 30px;}
 .main_best .best_con .swiper-slide{ width: 190px;}
 .main_best .best_con .swiper-slide a{ display: inline-block}
 .main_best .best_con .swiper-slide a img{ width: 100%;}
 .main_best .best_con .swiper-slide a .txt_wrap h6{ height: 40px; padding: 15px 0;  font-size: 14px; font-weight: 400; border-bottom: 1px solid #888; line-height: 20px; }
 .main_best .best_con .swiper-slide a .txt_wrap p{padding: 15px 0; font-size: 16px; font-weight: 600; }
 
-.more{ padding: 20px 0; text-align: center;}
-.more a{ display: inline-block; font-size: 24px; font-weight: 400; border-bottom: 1px solid #000; }

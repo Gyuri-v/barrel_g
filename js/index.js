@@ -31,14 +31,26 @@ $(document).ready(function(){
     
     //best slide-nav
      var swiper = new Swiper('.main_best .slide_nav .swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 10,
+        slidesPerView: 'auto',
+        spaceBetween: 10,
     });
+    
+    
+    $('.main_best .swiper-slide').click(function(){
+        $(this).addClass('on');
+        $(this).siblings('div').removeClass('on');
+        
+        idx = $(this).index() + 1;
+        $('.slide1, .slide2, .slide3, .slide4, .slide5, .slide6').removeClass('on');
+        $('.slide' + idx).addClass('on');
+    })
     
     //best_con slide
      var swiper = new Swiper('.main_best .best_con .swiper-container', {
-      slidesPerView: 'auto',
-      spaceBetween: 30,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        observer: true,
+        observeParents: true,
     });
 
 })
