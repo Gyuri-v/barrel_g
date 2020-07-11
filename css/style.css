@@ -136,3 +136,21 @@ table {
 .main_cat ul li a .txt_wrap{ width: 100%; position: absolute; top: 50%; left: 0; transform: translate(0, -50%);}
 .main_cat ul li a .txt_wrap h6{ color: #fff; font-size: 36px; font-weight: bold; text-align: center; }
 .main_cat ul li a .txt_wrap .more{ color: #fff; font-size: 24px; }
+
+/*main_brand*/
+.main_brand{ width: 100%; padding: 50px 0;}
+.main_brand .brand_story{ width: 100%; height: auto; margin: 50px 0; position: relative;}
+.main_brand .brand_story h3{ font-size: 48px; font-weight: bold; text-align: left; line-height: 50px; position: absolute; top: 0; left: 25px; z-index: -1;}
+.main_brand .brand_story img{ width: 100%}
+.main_brand .brand_story p{ font-size: 14px; font-weight: 400; text-align: left; line-height: 20px; position: absolute; bottom: 100px; left: 25px; z-index: 1;}
+.main_brand .brand_story .br_bottom{ width: 100%; height: 300px; background: linear-gradient( 180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    opacity: 0.95; position: absolute; bottom: 0; left: 0; }
+.main_brand .brand_story .more{ width: 100%; position: absolute; bottom: 0; left: 0;}
+
+.main_brand .brand_visual{ width: 100%; height: auto; margin: 100px 0 50px; padding: 50px 0 100px;  position: relative;}
+.main_brand .brand_visual h3{ font-size: 48px; font-weight: bold; text-align: left; line-height: 50px; position: absolute; top: 0; right: 25px; z-index: -1;}
+.main_brand .brand_visual img{ width: 100%}
+.main_brand .brand_visual p{ font-size: 14px; font-weight: 400; text-align: left; line-height: 20px; position: absolute; bottom: 70px; right: 25px; z-index: 1;}
+.main_brand .brand_visual .br_bottom{ width: 100%; height: 200px; background: linear-gradient( 180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    opacity: 0.95; position: absolute; bottom: 0; left: 0; }
+.main_brand .brand_visual .more{ width: 100%; position: absolute; bottom: 0; left: 0;}

@@ -72,5 +72,14 @@ $(document).ready(function(){
         prevEl: '.main_event .swiper-button-prev',
       },
     })
+    
+    
+    //brand txt moving
+//	var storyOffset = $('.brand_story').offset();
+//    $(window).scroll(function(){
+//        if( $(document).scrollTop() > storyOffset.top - 500 ){
+//            $('.brand_story h3').animate({left : '25px'},700);
+//        }
+//    })
 
 })
