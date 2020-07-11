@@ -1,4 +1,6 @@
 $(document).ready(function(){
+    //parallax
+    $('.parallax-window').parallax({imageSrc: 'img/bg/bg_cat01.jpg'});
     
     //header scroll event
     var headerOffset = $('.header').offset();
