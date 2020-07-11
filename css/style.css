@@ -60,3 +60,24 @@ table {
 .header .gnb ul li a{ height: 50px; display: block; padding: 12px 10px; box-sizing: border-box; }
 .header .gnb ul li a img{ height: 100%;}
 
+
+
+
+
+
+/*main*/
+.txt_title{ font-size: 36px; font-weight: bold; text-align: center; line-height: 48px;}
+
+/*main_vis*/
+.main_vis{ width: 100%; height: auto; }
+.main_vis .swiper-container{ width: 100%; height: auto;}
+.main_vis .swiper-wrapper{width: 100%; height: auto;}
+.main_vis .swiper-slide{ width: 100%; height: auto;}
+.main_vis .swiper-slide img {width: 100%;}
+.main_vis .swiper-button-prev,
+.main_vis .swiper-button-next{ margin-top: 15px; color: #fff;  }
+.main_vis .swiper-button-prev::after,
+.main_vis .swiper-button-next::after{ font-size: 24px; font-weight: bold;}
+.main_vis .swiper-pagination{ top: 50%; bottom: auto; margin-top: 25px;}
+.main_vis .swiper-pagination-bullet{ border-radius: 0; background: #fff; opacity: 1; }
+.main_vis .swiper-pagination-bullet-active{ width: 24px; background: #fff;}
