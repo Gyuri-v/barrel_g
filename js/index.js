@@ -52,5 +52,23 @@ $(document).ready(function(){
         observer: true,
         observeParents: true,
     });
+    
+    
+    //event slide
+    var mySwiper = new Swiper('.main_event .swiper-container', {
+      loop: true,
+        spaceBetween: 30,
+//      autoplay: {
+//        delay: 2000,
+//        disableOnInteraction: false,
+//      },
+      pagination: {
+        el: '.main_event .swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.main_event .swiper-button-next',
+        prevEl: '.main_event .swiper-button-prev',
+      },
+    })
 
 })
