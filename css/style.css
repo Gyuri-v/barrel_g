@@ -1,3 +1,6 @@
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-7ExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-9Black'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 /*common*/
 html, body, div, span, applet, object, iframe,
@@ -30,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-family: 'S-CoreDream-3Light', sans-serif; 
 }
 ol, ul {
 	list-style: none;
@@ -116,7 +120,7 @@ table {
 
 
 /*main*/
-.txt_title{ font-size: 40px; font-weight: bold; text-align: center; line-height: 48px; margin-bottom: 50px;}
+.txt_title{ font-family: 'S-CoreDream-9Black'; font-size: 40px; text-align: center; line-height: 48px; margin-bottom: 50px;}
 .more{ padding: 20px 0; text-align: center;}
 .more a{ display: inline-block; font-size: 24px; font-weight: 400; border-bottom: 1px solid #000; }
 /*
@@ -186,13 +190,13 @@ table {
 .main_cat ul li.cat06{ background: url(../img/bg/bg_cat06.gif) no-repeat; background-position: center; background-size: cover; }
 .main_cat ul li a{ height: 100%; display: block; position: relative; background: rgba(0,0,0,0.3); }
 .main_cat ul li a .txt_wrap{ width: 100%; position: absolute; top: 50%; left: 0; transform: translate(0, -50%);}
-.main_cat ul li a .txt_wrap h6{ color: #fff; font-size: 36px; font-weight: bold; text-align: center; }
+.main_cat ul li a .txt_wrap h6{ font-family: 'S-CoreDream-7ExtraBold'; color: #fff; font-size: 36px; font-weight: bold; text-align: center; }
 .main_cat ul li a .txt_wrap .more{ color: #fff; font-size: 24px; }
 
 /*main_brand*/
 .main_brand{ width: 100%; padding: 50px 0;}
 .main_brand .brand_story{ width: 100%; height: auto; margin: 50px 0; position: relative;}
-.main_brand .brand_story h3{ font-size: 48px; font-weight: bold; text-align: left; line-height: 50px; position: absolute; top: 0; left: 25px; z-index: -1;}
+.main_brand .brand_story h3{ font-family: 'S-CoreDream-9Black'; font-size: 48px; text-align: left; line-height: 50px; position: absolute; top: 0; left: 25px; z-index: -1;}
 .main_brand .brand_story img{ width: 100%}
 .main_brand .brand_story p{ font-size: 14px; font-weight: 400; text-align: left; line-height: 20px; position: absolute; bottom: 100px; left: 25px; z-index: 1;}
 .main_brand .brand_story .br_bottom{ width: 100%; height: 300px; background: linear-gradient( 180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
@@ -200,7 +204,7 @@ table {
 .main_brand .brand_story .more{ width: 100%; position: absolute; bottom: 0; left: 0;}
 
 .main_brand .brand_visual{ width: 100%; height: auto; margin: 100px 0 50px; padding: 50px 0 100px;  position: relative;}
-.main_brand .brand_visual h3{ font-size: 48px; font-weight: bold; text-align: left; line-height: 50px; position: absolute; top: 0; right: 25px; z-index: -1;}
+.main_brand .brand_visual h3{ font-family: 'S-CoreDream-9Black'; font-size: 48px; text-align: left; line-height: 50px; position: absolute; top: 0; right: 25px; z-index: -1;}
 .main_brand .brand_visual img{ width: 100%}
 .main_brand .brand_visual p{ font-size: 14px; font-weight: 400; text-align: left; line-height: 20px; position: absolute; bottom: 70px; right: 25px; z-index: 1;}
 .main_brand .brand_visual .br_bottom{ width: 100%; height: 200px; background: linear-gradient( 180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
