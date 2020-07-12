@@ -14,6 +14,24 @@ $(document).ready(function(){
         }
     })
     
+    //navigation toggle
+    $('.btn_nav').click(function(){
+        $('.nav').animate({right : '0'})
+        $('body').css({overflow : 'hidden'})
+    })
+    $('.close').click(function(){
+        $('.nav').animate({right : '-100%'})
+        $('body').css({overflow : 'auto'})
+    })
+    //navigation sub menu toggle
+    $('.tit_menu li').click(function(){
+        $(this).children('.sub_menu').slideToggle();
+    })
+    //navigation global type toggle
+    $('.nav_global').click(function(){
+        $('.nav_global_type').slideToggle();
+    })
+    
     
     //main_vis 슬라이드
     var mySwiper = new Swiper('.main_vis .swiper-container', {
