@@ -28,7 +28,7 @@ $(document).ready(function(){
         $(this).children('.sub_menu').slideToggle();
     })
     //navigation global type toggle
-    $('.nav_global').click(function(){
+    $('.nav_global button').click(function(){
         $('.nav_global_type').slideToggle();
     })
     

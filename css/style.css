@@ -82,7 +82,7 @@ table {
 
 .nav .nav_menu{ width: 100%;}
 .nav .nav_menu .tit_menu>li{ width: 100%; }
-.nav .nav_menu .tit_menu>li>a{ display: block; padding: 15px 40px;; box-sizing: border-box; font-size: 24px; font-weight: 900; line-height: 40px;  position: relative;}
+.nav .nav_menu .tit_menu>li>a{ font-family: 'S-CoreDream-7ExtraBold'; display: block; padding: 15px 40px;; box-sizing: border-box; font-size: 24px; font-weight: 900; line-height: 40px;  position: relative;}
 .nav .nav_menu .tit_menu>li>a::after{ content: ''; width:15px; height: 15px; position: absolute; top: 25px; right: 30px; border-right: 3px solid #000; border-bottom: 3px solid #000; transform: rotate(45deg)}
 .nav .nav_menu .tit_menu>li>a.on::after{ top: 30px; transform: rotate(225deg) }
 
@@ -91,11 +91,10 @@ table {
 .nav .nav_menu .sub_menu li a{ display: block; padding: 10px 0 10px 70px; box-sizing: border-box; font-size: 18px; font-weight: 600; line-height: 24px;}
 
 .nav .nav_bx{ width: 100%; padding: 30px 0 0;}
-.nav .nav_bx .nav_bx_txt_wrap{}
-.nav .nav_bx .nav_bx_txt_wrap .nav_bx_tit{ padding: 15px 40px; box-sizing: border-box; font-size: 24px; font-weight: 900; line-height: 40px;}
+.nav .nav_bx .nav_bx_txt_wrap .nav_bx_tit{ font-family: 'S-CoreDream-7ExtraBold'; padding: 15px 40px; box-sizing: border-box; font-size: 24px; font-weight: 900; line-height: 40px;}
 .nav .nav_bx .nav_bx_txt_wrap .nav_bx_txt{ padding: 0 40px; box-sizing: border-box; font-size: 16px; line-height: 24px;}
 .nav .nav_bx .nav_bx_link{ width: 100%; padding : 15px 40px 0; box-sizing: border-box; }
-.nav .nav_bx .nav_bx_link a{ display: block; padding: 10px; box-sizing: border-box; background-color: #000; color: #fff; font-size: 24px; font-weight: 600; line-height: 30px; position: relative;}
+.nav .nav_bx .nav_bx_link a{ display: block; padding: 10px; box-sizing: border-box; background-color: #000; color: #fff; font-size: 20px; font-weight: 600; line-height: 30px; position: relative;}
 .nav .nav_bx .nav_bx_link a::after{content: ''; width:13px; height: 13px; position: absolute; top: 17px; right: 15px; border-right: 3px solid #fff; border-bottom: 3px solid #fff; transform: rotate(-45deg)}
 
 .nav .nav_sns{ padding: 40px 40px 0; }
@@ -107,7 +106,7 @@ table {
 .nav .nav_sns ul li a.sns03{ background: url(../img/icon/btn_sns03_b.svg) no-repeat; background-size: cover; }
 .nav .nav_sns ul li a.sns04{ background: url(../img/icon/btn_sns04_b.svg) no-repeat; background-size: cover; }
 
-.nav .nav_global{ padding: 40px; font-size: 24px; font-weight: 400; line-height: 40px; }
+.nav .nav_global{ padding: 40px; font-size: 20px; font-weight: 400; line-height: 40px; }
 .nav .nav_global button{ width: 90px; height: 40px; padding: 0 10px;  float: right; background-color: transparent; border: 0; position: relative; }
 .nav .nav_global button img{ height: 100%; display: block; float: left;}
 .nav .nav_global button::after{ content: ''; width: 8px; height: 8px; border-bottom: 2px solid #000; border-right: 2px solid #000; position: absolute; top: 12px; right: 5px; transform: rotate(45deg);}
@@ -137,10 +136,10 @@ table {
 .main_vis .swiper-slide{ width: 100%; height: auto;}
 .main_vis .swiper-slide img {width: 100%;}
 .main_vis .swiper-button-prev,
-.main_vis .swiper-button-next{ margin-top: 15px; color: #fff;  }
+.main_vis .swiper-button-next{ margin-top: 25px; color: #fff;  }
 .main_vis .swiper-button-prev::after,
 .main_vis .swiper-button-next::after{ font-size: 24px; font-weight: bold;}
-.main_vis .swiper-pagination{ top: 50%; bottom: auto; margin-top: 25px;}
+.main_vis .swiper-pagination{ top: 50%; bottom: auto; margin-top: 35px;}
 .main_vis .swiper-pagination-bullet{ border-radius: 0; background: #fff; opacity: 1; }
 .main_vis .swiper-pagination-bullet-active{ width: 24px; background: #fff;}
 
