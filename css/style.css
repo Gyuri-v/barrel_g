@@ -165,3 +165,27 @@ table {
 .main_sns .sns_con ul li{ width: 33.33%; float: left;}
 .main_sns .sns_con ul li a{ display: block; height: auto;}
 .main_sns .sns_con ul li a img{ width: 100%; }
+
+
+/*footer*/
+.footer_con{ width: 100%; background-color: #000; }
+
+.foot_top{width: 100%; padding: 0 30px; box-sizing: border-box; border-bottom: 1px solid #333;}
+.foot_top ul{ overflow: hidden; }
+.foot_top ul li{ width: 33.33%; float: left; padding: 30px 0 ;}
+.foot_top ul li a{ display: block; border-right: 1px solid #999; color: #fff; font-weight: 400; font-size: 18px; text-align: center;}
+.foot_top ul li:last-child a{ border-right: 0;}
+
+.foot_sns{ width: 100%; padding: 0 30px; box-sizing: border-box; }
+.foot_sns ul{ overflow: hidden; padding-top: 30px;}
+.foot_sns ul li{ float: left; padding-right: 20px;}
+.foot_sns ul li a{ width: 40px; height: 40px; display: block;}
+.foot_sns ul li a.sns01{ background: url(../img/icon/btn_sns01.svg) no-repeat; background-size: cover;}
+.foot_sns ul li a.sns02{ background: url(../img/icon/btn_sns02.svg) no-repeat; background-size: cover;}
+.foot_sns ul li a.sns03{ background: url(../img/icon/btn_sns03.svg) no-repeat; background-size: cover;}
+.foot_sns ul li a.sns04{ background: url(../img/icon/btn_sns04.svg) no-repeat; background-size: cover;}
+
+.foot_info{ width: 100%; padding: 0 30px 30px; box-sizing: border-box;}
+.foot_info p{ color: #999; font-size: 16px; line-height: 24px;}
+.foot_info p.foot_txt{ margin-top: 30px; }
+.foot_info p strong{ color: #fff; font-size: 18px; font-weight: bold; line-height: 36px; }
