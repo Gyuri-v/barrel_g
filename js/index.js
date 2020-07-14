@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    //parallax
-    $('.parallax-window').parallax({imageSrc: 'img/bg/bg_cat01.jpg'});
+    
+    //aos
+    AOS.init();
+    $('main').find('div').attr( 'data-aos','fade-up');
+    $('footer').find('div').attr( 'data-aos','fade-up');
     
     //header scroll event
     var headerOffset = $('.header').offset();
