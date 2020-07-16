@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/index.js"></script>
 </head>
@@ -28,7 +32,7 @@
         <div class="nav">
             <div class="nav_top">
                 <div class="login"><a href="#">로그인</a></div>
-                <div class="close"><a href="javascript:void(0)"><img src="img/icon/btn_close.svg" alt="메뉴 닫기"></a></div>
+                <div class="close"><a href="javascript:void(0)">메뉴 닫기</a></div>
             </div>
             <div class="nav_search">
                 <input type="text" placeholder="검색어를 입력해주세요.">
@@ -152,27 +156,15 @@
                     <li><a href="#" class="sns04"></a></li>
                 </ul>
             </div>
-            <div class="nav_global">
-                GLOBAL MENU
-                <button type="button">
-                    <img src="img/icon/btn_global_south-korea.svg" alt="한국어">
-                    <div class="nav_global_type">
-                        <ul>
-                            <li><a href="#"><img src="img/icon/btn_global_usa.svg" alt="영어">EN</a></li>
-                            <li><a href="#"><img src="img/icon/btn_global_china.svg" alt="중국어">CN</a></li>
-                        </ul>
-                    </div>
-                </button>
-            </div>
         </div>
     </header>
     <main>
         <div class="main_vis">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/banner/bn_vis_slide3.jpg" alt="2020년 글로우 컬렉션 출시"></div>
                     <div class="swiper-slide"><img src="img/banner/bn_vis_slide1.jpg" alt="홀리데이 빅 웨이브 배럴 클럽 여름 컬렉션"></div>
                     <div class="swiper-slide"><img src="img/banner/bn_vis_slide2.jpg" alt="2020년 배럴 스쿠버다이빙 트립"></div>
-                    <div class="swiper-slide"><img src="img/banner/bn_vis_slide3.jpg" alt="2020년 글로우 컬렉션 출시"></div>
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
@@ -184,12 +176,12 @@
             <div class="slide_nav">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide on"><a href="javascript:void(0)">ALL</a></div>
-                        <div class="swiper-slide"><a href="javascript:void(0)">WOMEN</a></div>
-                        <div class="swiper-slide"><a href="javascript:void(0)">MEN</a></div>
-                        <div class="swiper-slide"><a href="javascript:void(0)">KIDS</a></div>
-                        <div class="swiper-slide"><a href="javascript:void(0)">BRFIT</a></div>
-                        <div class="swiper-slide"><a href="javascript:void(0)">HOLIDAY</a></div>
+                        <div class="swiper-slide on"><a href="javascript:void(0)"><span>ALL</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>WOMEN</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>MEN</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>KIDS</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>BRFIT</span></a></div>
+                        <div class="swiper-slide"><a href="javascript:void(0)"><span>HOLIDAY</span></a></div>
                     </div>
                 </div>
             </div>
@@ -201,7 +193,12 @@
                                 <img src="img/banner/bn_best_s1_1.gif" alt="유니섹스 매쉬 슬리브리스">
                                 <div class="txt_wrap">
                                     <h6>유니섹스 매쉬 슬리브리스</h6>
-                                    <p>55,000원</p>
+                                    <div class="price_info">
+                                        <strong class="c_price">33,000원</strong>
+                                        <span class="n_price">55,000원</span>
+                                        <span class="discount">40%</span>
+                                    </div>
+                                    
                                 </div>
                             </a>
                         </div>
@@ -535,6 +532,7 @@
             <ul>
                 <li class="cat01">
                     <a href="#">
+                        <span class="bg"></span>
                         <div class="txt_wrap">
                             <h6>BARREL FRIENDS</h6>
                             <div class="more">VIEW MORE</div>
@@ -603,6 +601,41 @@
                 </div>
             </div>
         </div>
+        
+        
+        <script>
+            var controller = new ScrollMagic.Controller();
+
+            var tween1 = TweenMax.to('.brand_story h3', 0.5, {
+                left: 130
+            });
+
+              var scene = new ScrollMagic.Scene({
+        triggerElement: ".brand_story",
+        duration: "100%",
+                  offset : -200,
+    })
+    .setTween(tween1)
+    .addTo(controller)
+//    .addIndicators({
+//        name: "1"
+//    }) 
+                          var tween2 = TweenMax.to('.brand_visual h3', 0.5, {
+                right: 130
+            });
+
+              var scene = new ScrollMagic.Scene({
+        triggerElement: ".brand_visual",
+        duration: "100%",
+                  offset : -200,
+    })
+    .setTween(tween2)
+    .addTo(controller)
+//    .addIndicators({
+//        name: "1"
+//    }) 
+        </script>
+        
         <div class="main_sns">
             <h3 class="txt_title">INSTAGRAM</h3>
             <p><a href="https://www.instagram.com/getbarrel/">@ getbarrel</a></p>
