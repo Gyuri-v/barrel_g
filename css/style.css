@@ -123,15 +123,15 @@ input, select{ font-family: 'Noto Sans KR', sans-serif; }
 
 /*main_vis*/
 .main_vis{ width: 100%; height: auto; }
-.main_vis .swiper-container{ width: 100%; height: auto;}
-.main_vis .swiper-wrapper{width: 100%; height: auto;}
-.main_vis .swiper-slide{ width: 100%; height: auto;}
-.main_vis .swiper-slide img {width: 100%;}
-.main_vis .swiper-button-prev,
-.main_vis .swiper-button-next{ margin-top: 25px; color: #fff;  }
+.main_vis .swiper-container{ width: 100%;  height: 100vh; }
+.main_vis .swiper-wrapper{width: 100%;}
+.main_vis .swiper-slide{ width: 100%; text-indent: -9999px;}
+.main_vis .swiper-slide.vis_slide1{ background: url(../img/bg/bg_vis_slide1.jpg) no-repeat; background-size: cover;}
+.main_vis .swiper-slide.vis_slide2{ background: url(../img/bg/bg_vis_slide2.jpg) no-repeat; background-size: cover;}
+.main_vis .swiper-slide.vis_slide3{ background: url(../img/bg/bg_vis_slide3.jpg) no-repeat; background-size: cover;}
 .main_vis .swiper-button-prev::after,
-.main_vis .swiper-button-next::after{ font-size: 24px; font-weight: bold;}
-.main_vis .swiper-pagination{ bottom: 30px; margin-top: 35px;}
+.main_vis .swiper-button-next::after{ color: #fff;  font-size: 24px; font-weight: bold;}
+.main_vis .swiper-pagination{ bottom: 30px; }
 .main_vis .swiper-pagination-bullet{ border-radius: 8px; background: #fff; opacity: 1; }
 .main_vis .swiper-pagination-bullet-active{ width: 24px; background: #fff;}
 
