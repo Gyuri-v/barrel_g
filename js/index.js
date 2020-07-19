@@ -93,23 +93,8 @@ $(document).ready(function(){
     
     //main_category
     $(window).scroll(function(){
-        if($(document).scrollTop()+800 >= $('.cat01').offset().top){
-            $('.cat01 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
-        }
-        if($(document).scrollTop()+800 >= $('.cat02').offset().top){
-            $('.cat02 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
-        }
-        if($(document).scrollTop()+800 >= $('.cat03').offset().top){
-            $('.cat03 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
-        }
-        if($(document).scrollTop()+800 >= $('.cat04').offset().top){
-            $('.cat04 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
-        }
-        if($(document).scrollTop()+800 >= $('.cat05').offset().top){
-            $('.cat05 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
-        }
-        if($(document).scrollTop()+800 >= $('.cat06').offset().top){
-            $('.cat06 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
+        if($(document).scrollTop()+800 >= $('.main_cat ul li').offset().top){
+            $('.main_cat ul li span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
     })
     
