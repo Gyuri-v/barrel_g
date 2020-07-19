@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    //aos
+    //plugin - aos 
     AOS.init();
     
     //header scroll event
@@ -34,7 +34,7 @@ $(document).ready(function(){
     })
     
     
-    //main_vis 슬라이드
+    //main_vis slide
     var mySwiper = new Swiper('.main_vis .swiper-container', {
       loop: true,
       autoplay: {
@@ -50,12 +50,11 @@ $(document).ready(function(){
       },
     })
     
-    //best slide-nav
+    //main_best slide-nav
      var swiper = new Swiper('.main_best .slide_nav .swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: 0,
     });
-    
     
     $('.main_best .swiper-slide').click(function(){
         $(this).addClass('on');
@@ -66,7 +65,7 @@ $(document).ready(function(){
         $('.slide' + idx).addClass('on');
     })
     
-    //best_con slide
+    //main_best best_con slide
      var swiper = new Swiper('.main_best .best_con .swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: 20,
@@ -75,10 +74,10 @@ $(document).ready(function(){
     });
     
     
-    //event slide
+    //main_event slide
     var mySwiper = new Swiper('.main_event .swiper-container', {
       loop: true,
-        spaceBetween: 30,
+      spaceBetween: 30,
       autoplay: {
         delay: 2000,
         disableOnInteraction: false,
@@ -92,7 +91,7 @@ $(document).ready(function(){
       },
     })
     
-    //category
+    //main_category
     $(window).scroll(function(){
         if($(document).scrollTop()+800 >= $('.cat01').offset().top){
             $('.cat01 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
@@ -118,7 +117,7 @@ $(document).ready(function(){
     var controller = new ScrollMagic.Controller();
 
     //brand_story
-    var tween1 = TweenMax.to('.brand_story h3', 0.5, {
+    var tween1 = TweenMax.to('.brand_story strong', 0.5, {
         left: 130
     });
     var scene = new ScrollMagic.Scene({
@@ -133,7 +132,7 @@ $(document).ready(function(){
     //    }) 
 
     //brand_visual
-    var tween2 = TweenMax.to('.brand_visual h3', 0.5, {
+    var tween2 = TweenMax.to('.brand_visual strong', 0.5, {
         right: 130
     });
 
