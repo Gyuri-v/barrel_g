@@ -102,6 +102,21 @@ $(document).ready(function(){
         if($(document).scrollTop()+800 >= $('.cat01').offset().top){
             $('.cat01 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
         }
+        if($(document).scrollTop()+800 >= $('.cat02').offset().top){
+            $('.cat02 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+        }
+        if($(document).scrollTop()+800 >= $('.cat03').offset().top){
+            $('.cat03 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+        }
+        if($(document).scrollTop()+800 >= $('.cat04').offset().top){
+            $('.cat04 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+        }
+        if($(document).scrollTop()+800 >= $('.cat05').offset().top){
+            $('.cat05 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+        }
+        if($(document).scrollTop()+800 >= $('.cat06').offset().top){
+            $('.cat06 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+        }
 //        if($(document).scrollTop()*1.4 > $('.cat02').offset().top){
 //            var x = $(this).scrollTop();
 //            $('.cat02').css('background-position', '0% ' + parseInt(-x / 10 + 180)  + 'px');
