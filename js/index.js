@@ -139,19 +139,38 @@ $(document).ready(function(){
 //        }
     })
     
-    //brand txt moving
-//    var controller01 = new ScrollMagic.Controller();
-//	var tween01 = TweenMax.to('.brand_story h3', 0.5, {
-//		left: 50,
-//	});
-   
-    
-//    $(window).scroll(function(){
-//        if($(document).scrollTop()*1.4 > $('.brand_story').offset().top){
-//            var x = $(this).scrollTop();
-//            $('.brand_story').find('h3').css('left', parseInt( x / 10 - 350)  + 'px');
-//            $('.brand_visual').find('h3').css('right', parseInt( x / 10 - 440)  + 'px');
-//        }
-//    })
+    //main_brand txt moving
+    var controller = new ScrollMagic.Controller();
+
+    //brand_story
+    var tween1 = TweenMax.to('.brand_story h3', 0.5, {
+        left: 130
+    });
+    var scene = new ScrollMagic.Scene({
+        triggerElement: ".brand_story",
+        duration: "100%",
+        offset : -200,
+        })
+        .setTween(tween1)
+        .addTo(controller)
+    //    .addIndicators({
+    //        name: "1"
+    //    }) 
+
+    //brand_visual
+    var tween2 = TweenMax.to('.brand_visual h3', 0.5, {
+        right: 130
+    });
+
+    var scene = new ScrollMagic.Scene({
+        triggerElement: ".brand_visual",
+        duration: "100%",
+        offset : -200,
+        })
+        .setTween(tween2)
+        .addTo(controller)
+    //    .addIndicators({
+    //        name: "1"
+    //    })
 
 })
