@@ -163,7 +163,7 @@ input, select{ font-family: 'Noto Sans KR', sans-serif; }
 
 /*main_event*/
 .main_event{ width: 100%; padding: 50px 0;}
-.main_event .swiper-container{ width: 100%; height: auto; padding: 30px; padding-top: 0; box-sizing: border-box;}
+.main_event .swiper-container{ width: 100%; height: auto; padding: 0 20px 30px; padding-top: 0; box-sizing: border-box;}
 .main_event .swiper-slide a{ display: block;}
 .main_event .swiper-slide img{ width: 100%; }
 .main_event .swiper-slide .txt_wrap strong{ display: block; padding: 15px 0; font-size: 16px; font-weight: bold; text-align: center; line-height: 24px;}
@@ -172,7 +172,8 @@ input, select{ font-family: 'Noto Sans KR', sans-serif; }
 .main_event .swiper-button-next{ top: 40%; right: 5px; color: #e2e2e2; }
 .main_event .swiper-button-prev::after,
 .main_event .swiper-button-next::after{ font-size: 28px;}
-.main_event .swiper-pagination-bullet{ height: 3px; border-radius: 0; background: #e2e2e2; opacity: 1; }
+.main_event .swiper-pagination{ z-index: 99;}
+.main_event .swiper-pagination-bullet{ height: 5px; border-radius: 5px; background: #e2e2e2; opacity: 1; }
 .main_event .swiper-pagination-bullet-active{ width: 24px; background: #e2e2e2;}
 
 /*main_category*/
