@@ -89,9 +89,10 @@ input, select{ font-family: 'Noto Sans KR', sans-serif; }
     font-size: 16px; line-height: 40px; 
     position: relative; border-bottom: 1px solid #eee;}
 .nav .nav_menu .tit_menu>li>a::after{ content: ''; width:12px; height: 12px; position: absolute; top: 18px; right: 20px; border-right: 1px solid #000; border-bottom: 1px solid #000; transform: rotate(45deg)}
-.nav .nav_menu .tit_menu>li>a.on::after{ top: 30px; transform: rotate(225deg) }
+.nav .nav_menu .tit_menu>li.on>a::after{ top: 24px; transform: rotate(225deg) }
+.nav .nav_menu .tit_menu>li:last-child>a::after{ display: none; }
 
-.nav .nav_menu .sub_menu{ display: none;}
+.nav .nav_menu .sub_menu{ height: 0; overflow: hidden;}
 .nav .nav_menu .sub_menu li{ width: 100%; font-family: 'Noto Sans KR', sans-serif;  }
 .nav .nav_menu .sub_menu li a{ display: block; padding: 10px 0 10px 40px; box-sizing: border-box; font-size: 16px; font-weight: 500; line-height: 24px;}
 

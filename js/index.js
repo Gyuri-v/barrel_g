@@ -24,13 +24,20 @@ $(document).ready(function(){
         $('.nav').animate({right : '-100%'})
         $('body').css({overflow : 'auto'})
     })
-    //navigation sub menu toggle
-    $('.tit_menu li').click(function(){
-        $(this).children('.sub_menu').slideToggle();
-    })
-    //navigation global type toggle
-    $('.nav_global button').click(function(){
-        $('.nav_global_type').slideToggle();
+    
+    //navigation sub menu accordian
+    $('.tit_menu>li').click(function(){
+//        $(this).children('.sub_menu').slideToggle();
+        var subHight = $(this).find('.sub_menu ul').outerHeight();
+        
+        if( $(this).hasClass('on') ){
+            $(this).removeClass('on');
+            $(this).children('.sub_menu').css({height : 0});
+        }
+        else{
+            $(this).addClass('on');
+            $(this).children('.sub_menu').css({height : subHight});
+        }
     })
     
     
