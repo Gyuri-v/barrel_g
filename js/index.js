@@ -93,50 +93,25 @@ $(document).ready(function(){
     })
     
     //category
-    //                                               이거 각각 하는법 물어보기
-//    $('.bg').scroll(function() {
-//        var x = $(this).scrollTop();
-//        $(this).css('background-position', '0% ' + parseInt(-x / 10) + 'px');
-//    });
     $(window).scroll(function(){
         if($(document).scrollTop()+800 >= $('.cat01').offset().top){
-            $('.cat01 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+            $('.cat01 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
         if($(document).scrollTop()+800 >= $('.cat02').offset().top){
-            $('.cat02 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+            $('.cat02 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
         if($(document).scrollTop()+800 >= $('.cat03').offset().top){
-            $('.cat03 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+            $('.cat03 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
         if($(document).scrollTop()+800 >= $('.cat04').offset().top){
-            $('.cat04 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+            $('.cat04 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
         if($(document).scrollTop()+800 >= $('.cat05').offset().top){
-            $('.cat05 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+            $('.cat05 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
         if($(document).scrollTop()+800 >= $('.cat06').offset().top){
-            $('.cat06 span').css({transform: 'translateY('+($(window).scrollTop()/160-50)+'%)'});
+            $('.cat06 span').css({transform: 'translateY('+($(window).scrollTop()/160-30)+'%)'});
         }
-//        if($(document).scrollTop()*1.4 > $('.cat02').offset().top){
-//            var x = $(this).scrollTop();
-//            $('.cat02').css('background-position', '0% ' + parseInt(-x / 10 + 180)  + 'px');
-//        }
-//        if($(document).scrollTop()*1.4 > $('.cat03').offset().top){
-//            var x = $(this).scrollTop();
-//            $('.cat03').css('background-position', '0% ' + parseInt(-x / 10 + 210)  + 'px');
-//        }
-//        if($(document).scrollTop()*1.4 > $('.cat04').offset().top){
-//            var x = $(this).scrollTop();
-//            $('.cat04').css('background-position', '0% ' + parseInt(-x / 10 + 240)  + 'px');
-//        }
-//        if($(document).scrollTop()*1.4 > $('.cat05').offset().top){
-//            var x = $(this).scrollTop();
-//            $('.cat05').css('background-position', '0% ' + parseInt(-x / 10 + 270)  + 'px');
-//        }
-//        if($(document).scrollTop()*1.4 > $('.cat06').offset().top){
-//            var x = $(this).scrollTop();
-//            $('.cat06').css('background-position', '0% ' + parseInt(-x / 10 + 200)  + 'px');
-//        }
     })
     
     //main_brand txt moving
