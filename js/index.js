@@ -9,9 +9,17 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if($(document).scrollTop() > headerOffset.top){
             $('.header').addClass('on');
+            $('.header .gnb h1 a').css({'background': 'url(img/logo/logo_black.svg) no-repeat', 'background-size': '100%', 'background-position' : 'center'})
+            $('.btn_cart img').attr('src','img/icon/btn_cart_black.svg');
+            $('.btn_user img').attr('src','img/icon/btn_user_black.svg');
+            $('.btn_nav img').attr('src','img/icon/btn_nav_black.svg');
         }
         else{
             $('.header').removeClass('on');
+            $('.header .gnb h1 a').css({'background': 'url(img/logo/logo_white.svg) no-repeat', 'background-size': '100%', 'background-position' : 'center'})
+            $('.btn_cart img').attr('src','img/icon/btn_cart_white.svg');
+            $('.btn_user img').attr('src','img/icon/btn_user_white.svg');
+            $('.btn_nav img').attr('src','img/icon/btn_nav_white.svg');
         }
     })
     

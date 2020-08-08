@@ -1,67 +1,10 @@
-@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'S-CoreDream-7ExtraBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff'); font-weight: normal; font-style: normal; }
-@font-face { font-family: 'S-CoreDream-9Black'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-9Black.woff') format('woff'); font-weight: normal; font-style: normal; }
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-
-/*common*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-    text-decoration: none;
-    word-break: keep-all;
-    color: #000;
-}
- HTML5 display-role reset for older browsers 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-input, select{ font-family: 'Noto Sans KR', sans-serif; }
-
-
 /*header*/
 .header{width: 100%; padding: 5px 0; position: absolute; z-index: 99999; background-color: transparent; }
 .header.on{ width: 100%; background-color: #fff; position: fixed;}
 
 .header .gnb{ height: 44px; position: relative;}
 .header .gnb h1{ width: 97px; float: left; position: absolute; top: 50%; left: 15px; margin-top: -11px;}
-.header .gnb h1 a{ height: 21px; display: block; background:  url(../img/logo/logo.svg) no-repeat; background-size: 100%; background-position: center; text-indent: -99999px;}
+.header .gnb h1 a{ height: 21px; display: block; background:  url(../img/logo/logo_white.svg) no-repeat; background-size: 100%; background-position: center; text-indent: -99999px;}
 
 .header .gnb ul{ position: absolute; top: 0; right: 0;}
 .header .gnb ul li{ float: left;}
@@ -236,6 +179,6 @@ input, select{ font-family: 'Noto Sans KR', sans-serif; }
 .foot_sns ul li a.sns04{ background: url(../img/icon/btn_sns04.svg) no-repeat; background-size: cover;}
 
 .foot_info{ width: 100%; padding: 0 0 30px; box-sizing: border-box;}
-.foot_info p{ color: #999; font-size: 14px; line-height: 24px;}
+.foot_info p{ color: #999; font-size: 12px; line-height: 20px;}
 .foot_info p.foot_txt{ margin-top: 20px; }
-.foot_info p strong{ color: #fff; font-size: 16px; font-weight: bold; line-height: 24px; }
+.foot_info p strong{ color: #fff; font-size: 14px; font-weight: bold; line-height: 20px; }
